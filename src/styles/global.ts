@@ -8,14 +8,15 @@ export const GlobalStyle = createGlobalStyle`
     --light-blue: #415463;
     --darkest-blue: #09141a;
     --lightest-blue: #afbbc7;
+    --shadow: rgba(0,0,0,.5);
     --complementary-red: #ff3100;
     --complementary-green: #05b07b;
 
     // Glass Effect
     --blur: 5px;
-    --shadow: rgba(0,0,0,.5);
-    --glass: rgba(255,255,255,.1);
+    --glass: rgba(255,255,255,.3);
     --glass-border: rgba(255,255,255,.5);
+    --glass-shadow: rgba(255,255,255,.25);
   }
   
   * {
@@ -59,8 +60,10 @@ export const GlobalStyle = createGlobalStyle`
 
   .glass {
     background: var(--glass);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 4px 4px 4px var(--shadow);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 2px 2px 0 var(--glass-shadow);
+    border-top: 1px solid var(--glass-border);
+    border-left: 1px solid var(--glass-border);
   }
 `;

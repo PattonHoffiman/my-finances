@@ -1,12 +1,9 @@
+import { Home } from './pages/Home';
 import { GlobalStyle } from './styles/global';
 
-export function App() {
-  return (
-    <>
-      < GlobalStyle />
-      <div>
-        <h1>Hello First App!</h1>
-      </div>
-    </>
-  );
-}
+export const App: React.FC = () =>  (
+  <>
+    <Home />
+    <GlobalStyle />
+  </>
+);

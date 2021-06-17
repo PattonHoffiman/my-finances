@@ -64,6 +64,7 @@ export const Container = styled.div<IContainerProps>`
   width: 80px;
   height: 80px;
   border: none;
+  margin-top: 1rem;
   border-radius: 3rem;
   
   ${props =>

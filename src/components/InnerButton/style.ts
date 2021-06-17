@@ -24,8 +24,8 @@ export const Container = styled.button<IContainerProps>`
   align-items: center;
   justify-content: center;
 
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: none;
   position: relative;
   background: transparent;

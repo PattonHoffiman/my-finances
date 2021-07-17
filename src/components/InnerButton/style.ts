@@ -1,6 +1,6 @@
 import styled, { css, keyframes } from 'styled-components';
 
-interface IContainerProps {  
+interface IContainerProps {
   isHidden: boolean;
 }
 
@@ -20,7 +20,7 @@ const Shrink = keyframes`
 `;
 
 
-export const Container = styled.button<IContainerProps>`  
+export const Container = styled.button<IContainerProps>`
   align-items: center;
   justify-content: center;
 

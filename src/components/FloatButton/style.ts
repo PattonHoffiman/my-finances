@@ -61,8 +61,9 @@ export const Container = styled.div<IContainerProps>`
   align-items: center;
   justify-content: center;
   
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
+  
   border: none;
   margin-top: 1rem;
   border-radius: 3rem;

@@ -30,8 +30,9 @@ export const Filter = styled.button<IFilterProps>`
   align-items: center;
   justify-content: center;
 
-  width: 20px;
-  height: 40px;
+  width: 1.25rem;
+  height: 2.5rem;
+
   border: none;  
   background: transparent;
 
@@ -41,7 +42,7 @@ export const Filter = styled.button<IFilterProps>`
     transition: all .3s;
     
     ${props => props.state === 'up' &&
-      css`
+    css`
         fill: var(--white);
         path {
           &.up {
@@ -49,10 +50,10 @@ export const Filter = styled.button<IFilterProps>`
           }          
         }
       `
-    }
+  }
 
     ${props => props.state === 'down' &&
-      css`
+    css`
         fill: var(--white);
         path {
           &.down {
@@ -60,10 +61,10 @@ export const Filter = styled.button<IFilterProps>`
           }          
         }
       `
-    }
+  }
 
     ${props => props.state === 'fromA' &&
-      css`
+    css`
         fill: var(--white);
         path {
           &.letterA {
@@ -71,10 +72,10 @@ export const Filter = styled.button<IFilterProps>`
           }          
         }
       `
-    }
+  }
 
     ${props => props.state === 'fromZ' &&
-      css`
+    css`
         fill: var(--white);
         path {
           &.letterZ {
@@ -82,28 +83,28 @@ export const Filter = styled.button<IFilterProps>`
           }
         }
       `
-    }
+  }
 
     ${props => props.state === 'default' &&
-      css`
+    css`
         fill: var(--dark-blue);
         path { fill: var(--white); }
       `
-    }
+  }
 
     ${props => props.state === 'income' &&
-      css`
+    css`
         fill: var(--white);        
         path { fill: var(--complementary-green); }
       `
-    }
+  }
 
     ${props => props.state === 'outcome' &&
-      css`
+    css`
         fill: var(--white);
         path { fill: var(--complementary-red); }
       `
-    }
+  }
   }
 `;
 
@@ -113,8 +114,9 @@ export const BackButton = styled.button`
   justify-content: center;
 
 
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  
   border: none;  
   background: transparent;
   transform: rotate(180deg);

@@ -19,8 +19,9 @@ export const Container = styled.button`
   align-items: center;
   justify-content: center;
 
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  
   border: none;
   position: relative;
   background: transparent;

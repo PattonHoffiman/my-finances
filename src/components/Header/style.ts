@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   margin: 0 auto;
-  max-width: 360px;
+  max-width: 22.5rem;
   padding: 2rem 2rem 5rem;
   background: var(--light-blue);
 `;

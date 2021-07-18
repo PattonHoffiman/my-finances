@@ -8,8 +8,8 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
     
-  height: 250px;
   margin: 0 1.5rem;
+  height: 15.625rem;
   padding-bottom: 1rem;
 
   div:last-child {

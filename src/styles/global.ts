@@ -66,4 +66,29 @@ export const GlobalStyle = createGlobalStyle`
     border-top: 1px solid var(--glass-border);
     border-left: 1px solid var(--glass-border);
   }
+
+  .react-modal-overlay {
+    background: var(--shadow);
+
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .react-modal-content {
+    position: relative;
+
+    width: 100%;
+    height: 25rem;
+    max-width: 36rem;
+    background: var(--light-blue);
+    border-radius: .25rem .25rem 0 0;
+  }
 `;

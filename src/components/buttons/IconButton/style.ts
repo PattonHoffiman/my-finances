@@ -16,6 +16,7 @@ const Shrink = keyframes`
 `;
 
 export const Container = styled.button`
+  outline: none;
   align-items: center;
   justify-content: center;
 

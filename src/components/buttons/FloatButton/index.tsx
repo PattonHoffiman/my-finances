@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { InnerButton } from '../InnerButton';
 
 import { Container, Title } from './style';
-import menuImg from '../../assets/menu.svg';
-import listImg from '../../assets/list.svg';
-import plusImg from '../../assets/plus.svg';
-import closeImg from '../../assets/close.svg';
-import calendarImg from '../../assets/calendar.svg';
+import menuImg from '../../../assets/menu.svg';
+import listImg from '../../../assets/list.svg';
+import plusImg from '../../../assets/plus.svg';
+import closeImg from '../../../assets/close.svg';
+import calendarImg from '../../../assets/calendar.svg';
 
 interface IFloatButton {
   buttonAnimate: string;

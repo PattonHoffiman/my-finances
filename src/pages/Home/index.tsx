@@ -1,19 +1,12 @@
 import { useState } from 'react';
-import Modal from 'react-modal';
-
 import { Main } from "../../components/Main";
 import { Header } from "../../components/Header";
 import { Section } from "../../components/Section";
-import { IconButton } from "../../components/IconButton";
-import { InnerHeader } from "../../components/InnerHeader";
-import { FloatButton } from "../../components/FloatButton";
+import { FloatButton } from "../../components/buttons/FloatButton";
 
 import { Summary } from "../../containers/Summary";
 import { Transactions } from "../../containers/Transactions";
-
-import closeImg from '../../assets/close.svg';
-
-Modal.setAppElement('#root');
+import { NewTransactionModal } from '../../containers/NewTransactionModal';
 
 export const Home: React.FC = () => {
   const [showSummary, setShowSummary] = useState(true);
@@ -61,19 +54,10 @@ export const Home: React.FC = () => {
           onOpenNewTransactionModal={handleOpenNewTransactionModal}
         />
       </Main>
-      <Modal
+      <NewTransactionModal
         isOpen={isNewTransactionModalOpen}
         onRequestClose={handleCloseNewTransactionModal}
-      >
-        <InnerHeader>
-          <h3>Add New Transaction</h3>
-          <IconButton
-            icon={closeImg}
-            name="Close Button"
-            onOpenNewTransactionModal={handleCloseNewTransactionModal}
-          />
-        </InnerHeader>
-      </Modal>
+      />
     </>
   );
 }
